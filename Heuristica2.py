@@ -1,4 +1,5 @@
 import numpy as np
+import itertools
 from itertools import combinations
 
 print("\n")
@@ -38,5 +39,7 @@ for d in l:
 print("Orden de trabajos: ",TN)
 print("Tardanza Total Ponderada es: ", ttp)
 
-for i in range(1, len(l) + 1):
-    print (combinations(l, i))
+ttp2 = 0
+cc = []
+for combinacion in itertools.permutations(l,):
+	print(combinacion)
