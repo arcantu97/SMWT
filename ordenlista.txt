@@ -1,0 +1,1 @@
+i = index, pi = tiempo de procesamiento, di = tiempo de vencimiento, wi = prioridad, Ci = tiempo de completado, T = trabajo completado
