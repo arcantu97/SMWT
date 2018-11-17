@@ -1,8 +1,9 @@
 import numpy as np
 import itertools
-from itertools import permutations
+from itertools import combinations_with_replacement
 import collections
 import sys
+import pprint
 
 print("\n")
 archivo = str(input("\t\t\tIntroduce el nombre del archivo: "))
@@ -43,19 +44,20 @@ print("\t\t\tTardanza Total Ponderada es: ", ttp)
 
 print("\n\n")
 print("\t\t\t Busqueda local")
-l2 = l
 ttp2 = 0
-m = list(permutations(l2))
-for i in m:
+for i in itertools.permutations(l):
 	for x in i:
-		w = x[3]#elemento 3 de la permutacion x
-		t = x[5]#elemento 5 de la permutacion x
-		op = w*t
-		ttp2 += op
-		if ttp2 < ttp:
-			if ttp2 == 0:
-				break
-			if ttp2 > 0:
-				print("\t\t\tTardanza Total Ponderada es: ", ttp2)
-				break
+		for t in x:
+			w = x[3]
+			t = x[5]
+			op = w*t
+			ttp2 += op
+			if ttp2 < ttp and ttp2 > 0:
+				c = ttp2
+				
+	print("\t\t\tTardanza Total Ponderada es: ",c)
+	break
+			
+				
+
 

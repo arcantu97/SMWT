@@ -50,11 +50,10 @@ while contador <= d:
             while contador <= d:
                 archivo = 0
                 i = 0
-                k = str(archivo+1)
                 with open(str(nom) + "-" + str(archivo+1) + "-" + str(n) + ".txt",'a') as f:
                     writer = csv.writer(f, lineterminator='\n')
                     for i in range(n):
-                        i+=1 
+                        i+=1
                         vi = randint(vmin,vmax)
                         wi = randint(wmin,wmax)
                         pi = randint(pmin,pmax)
