@@ -1,0 +1,15 @@
+************** Experimento #1 Por peso (Prioridad) **************
+Resultados de constructiva: 79665
+Resultados de busqueda local: 77419
+***********Fin de experimento**********
+
+************** Experimento #2 Por tiempo de procesamiento **************
+Resultados de constructiva: 299043
+Resultados de busqueda local: 279264
+***********Fin de experimento**********
+
+************** Experimento #3 Por relación peso/tiempo de vencimiento **************
+Resultados de constructiva: 95309
+Resultados de busqueda local: 82381
+***********Fin de experimento**********
+
